@@ -5,6 +5,8 @@ import (
 	"net"
 	"os"
 	"syscall"
+
+	"golang.org/x/sys/unix"
 )
 
 const sock = "/tmp/sock.sock"
