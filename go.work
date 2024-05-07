@@ -1,6 +1,7 @@
-go 1.18
+go 1.22.2
 
 use (
-    ./demos/dsaax/ringbuffer
-    ./demos/singleflight
+    // ./demos/dsaax/ringbuffer
+    // ./demos/singleflight
+    ./demos/cache
 )
