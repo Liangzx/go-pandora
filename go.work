@@ -1,7 +1,9 @@
 go 1.22.2
 
 use (
-    // ./demos/dsaax/ringbuffer
-    // ./demos/singleflight
-    ./demos/cache
+	// ./demos/dsaax/ringbuffer
+	// ./demos/singleflight
+	./demos/cache
+	./demos/http
+	./demos/temp
 )
