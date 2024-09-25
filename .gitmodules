@@ -1,0 +1,3 @@
+[submodule "demos/gokit"]
+	path = demos/gokit
+	url = https://github.com/go-kit/examples.git
