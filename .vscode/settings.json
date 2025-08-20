@@ -1,4 +1,10 @@
 {
     "Codegeex.Chat.LanguagePreference": "中文",
-    "Codegeex.Comment.LanguagePreference": "English"
+    "Codegeex.Comment.LanguagePreference": "English",
+    "cSpell.words": [
+        "gokrb",
+        "jcmturner",
+        "keytab",
+        "spnego"
+    ]
 }

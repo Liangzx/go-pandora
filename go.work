@@ -1,4 +1,4 @@
-go 1.22.2
+go 1.24.5
 
 use (
 	// ./demos/dsaax/ringbuffer
@@ -6,4 +6,5 @@ use (
 	./demos/cache
 	./demos/http
 	./demos/temp
+	./demos/kerberos
 )
