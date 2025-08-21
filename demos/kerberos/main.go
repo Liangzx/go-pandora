@@ -15,13 +15,13 @@ import (
 // 示例 1: 客户端基础认证（使用用户名/密码）
 func exp1() {
 	// 1. 加载 krb5.conf 配置
-	cfg, err := config.Load("/path/to/your/krb5.conf")
+	cfg, err := config.Load("./krb5.conf")
 	if err != nil {
 		log.Fatalf("无法加载配置文件: %v", err)
 	}
 
 	// 2. 创建客户端实例（使用用户名、领域、密码）
-	cl := client.NewWithPassword("username", "YOUR.DOMAIN.LOCAL", "password", cfg, client.DisablePAFXFAST(true)) // 根据KDC配置可能需禁用PA-FX-FAST
+	cl := client.NewWithPassword("liangzx/admin", "LIANGZXGG.COM", "dingjia", cfg, client.DisablePAFXFAST(true)) // 根据KDC配置可能需禁用PA-FX-FAST
 
 	// 3. 执行登录认证
 	err = cl.Login()
@@ -29,6 +29,7 @@ func exp1() {
 		log.Fatalf("登录失败: %v", err)
 	}
 	log.Println("Kerberos 登录成功！")
+	return
 
 	// 4. 获取特定服务的票据（例如访问HTTP服务）
 	spn := "HTTP/host.your.domain.local" // 服务主体名称 (Service Principal Name)
@@ -102,6 +103,6 @@ func exp3() {
 
 func main() {
 	exp1()
-	exp2()
-	exp3()
+	// exp2()
+	// exp3()
 }
